@@ -1,7 +1,7 @@
 {
     "t1w": {
         "datatype": "anat",
-        "session": "bl",
+        "session": "b9",
         "suffix": "T1w"
     }
 }
