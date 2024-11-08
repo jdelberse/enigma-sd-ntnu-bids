@@ -10,7 +10,7 @@ demo = pd.read_excel(
 
 for sub in tsv.index:
     subnum = int(sub.replace("sub-",""))
-    rand = demo.loc[demo.ID == subnum, "randomization"]
+    rand = int(demo.loc[demo.ID == subnum, "randomization"].item())
 
     if rand == 1:
         ses_labs = {"ses-T2" : "ses-b9", "ses-T3" : "ses-sd9"}
@@ -23,7 +23,7 @@ for sub in tsv.index:
         
         if os.path.exists(old_scan) and not os.path.exists(new_scan):
             print(f"{old_scan} >>> {new_scan}")
-            #os.rename(old_scan, new_scan)
+            os.rename(old_scan, new_scan)
         else:
             print(f"{new_scan} exists. Skipping...")
         
@@ -32,7 +32,7 @@ for sub in tsv.index:
 
         if os.path.exists(old_dir) and not os.path.exists(new_dir):
             print(f"{old_dir} >>> {new_dir}")
-            #os.rename(old_dir, new_dir)
+            os.rename(old_dir, new_dir)
         else:
             print(f"{new_dir} exists. Skipping...")
 
