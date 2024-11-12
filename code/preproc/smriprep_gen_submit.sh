@@ -7,7 +7,7 @@ DISK='90G'
 ROOT=$(pwd)
 LOGS=$ROOT/derivatives/logs
 CONTAINERS=/data/project/sleep_ENIGMA_glymphatic/enigma-sd/containers/
-SMRIPREP=$CONTAINERS/images/bids/bids-smriprep--0.13.2.sing
+SMRIPREP=$CONTAINERS/images/bids/bids-smriprep--0.16.1.sing
 WORK=/tmp
 OUT=$ROOT/derivatives/smriprep
 SYMLINK=$ROOT/.git/annex/objects
@@ -40,7 +40,7 @@ for dir in $ROOT/sub-*; do
         --work-dir ${WORK} \
         ${ROOT} ${OUT}/${sub}/${ses} participant \
         --participant-label ${sub} \
-        --bids-filter-file ${ROOT}/code/pvs-seg/filter_${ses}.json\n"
+        --bids-filter-file ${ROOT}/code/preproc/filter_${ses}.json\n"
         printf "log       = ${LOGS}/\$(Cluster).\$(Process).${sub}.${ses}.log.txt\n"
         printf "output    = ${LOGS}/\$(Cluster).\$(Process).${sub}.${ses}.out.txt\n"
         printf "error     = ${LOGS}/\$(Cluster).\$(Process).${sub}.${ses}.err.txt\n"
