@@ -1,4 +1,5 @@
 import os
+import glob
 import pandas as pd
 
 # Load, add sub-labels, set sub as index
@@ -18,14 +19,15 @@ for sub in tsv.index:
         ses_labs = {"ses-T3" : "ses-b9", "ses-T4" : "ses-sd9"}
     
     for ses in ses_labs.keys():
-        old_scan = f"{sub}/{ses}/anat/{sub}_{ses}_T1w.nii.gz"
-        new_scan = f"{sub}/{ses}/anat/{sub}_{ses_labs[ses]}_T1w.nii.gz"
+        for f in glob.glob(f"{sub}/{ses_labs[ses]}/*/{sub}_{ses}*"):
+            old_scan = f
+            new_scan = f.replace(f"{sub}_{ses}",f"{sub}_{ses_labs[ses]}")
         
-        if os.path.exists(old_scan) and not os.path.exists(new_scan):
-            print(f"{old_scan} >>> {new_scan}")
-            os.rename(old_scan, new_scan)
-        else:
-            print(f"{new_scan} exists. Skipping...")
+            if os.path.exists(old_scan) and not os.path.exists(new_scan):
+                print(f"{old_scan} >>> {new_scan}")
+                os.rename(old_scan, new_scan)
+            else:
+                print(f"{new_scan} exists. Skipping...")
         
         old_dir = f"{sub}/{ses}"
         new_dir = f"{sub}/{ses_labs[ses]}"
