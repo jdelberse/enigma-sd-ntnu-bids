@@ -29,7 +29,7 @@ executable     = /usr/bin/singularity
 \n"
 
 # loop over all subjects
-for dir in $ROOT/sub-*; do
+for dir in $ROOT/sub-6006; do
     for ses in ses-b9 ses-sd9; do
     	sub=${dir#$ROOT/}
         printf "arguments = run \
