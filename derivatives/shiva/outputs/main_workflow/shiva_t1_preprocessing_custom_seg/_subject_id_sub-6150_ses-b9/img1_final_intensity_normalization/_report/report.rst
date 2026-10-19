@@ -1,1 +1,0 @@
-../../../../../../../../.git/annex/objects/XM/MG/MD5E-s9622--f546a5b51c7b6a84c8df482a3a9fd72c.rst/MD5E-s9622--f546a5b51c7b6a84c8df482a3a9fd72c.rst

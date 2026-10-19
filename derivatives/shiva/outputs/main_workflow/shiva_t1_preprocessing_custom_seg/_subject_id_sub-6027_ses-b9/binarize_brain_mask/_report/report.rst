@@ -1,1 +1,0 @@
-../../../../../../../../.git/annex/objects/Gk/fF/MD5E-s9111--d78094d163fb9ce3f1ae1df50c3b9f7f.rst/MD5E-s9111--d78094d163fb9ce3f1ae1df50c3b9f7f.rst

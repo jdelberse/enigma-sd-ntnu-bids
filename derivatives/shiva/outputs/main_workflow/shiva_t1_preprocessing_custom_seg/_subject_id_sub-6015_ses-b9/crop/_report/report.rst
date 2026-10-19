@@ -1,1 +1,0 @@
-../../../../../../../../.git/annex/objects/G3/Xj/MD5E-s10123--c639b151566020db1ee27743ee6d92f0.rst/MD5E-s10123--c639b151566020db1ee27743ee6d92f0.rst
