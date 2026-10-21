@@ -1,8 +1,8 @@
-# Trondheim sleep deprivation MRI dataset (`trondheim-bids`)
+# Trondheim Dataset (`ntnu-bids`)
 
 ## Overview
 
-This dataset contains MRI data from a sleep manipulation study conducted at the Norwegian University of Science and Technology (Norway). It is part of the ENIGMA-Sleep Working Group collection used to study the effects of sleep loss on glymphatic MRI indices. The data are organized according to the Brain Imaging Data Structure (BIDS) and managed with DataLad (git-annex).
+This dataset contains MRI data from a sleep manipulation study conducted at the Norwegian University of Science and Technology. It is part of the ENIGMA-Sleep Working Group collection used to study the effects of sleep loss on glymphatic MRI indices. The data are organized according to the Brain Imaging Data Structure (BIDS) and managed with DataLad (git-annex).
 
 ## Sample
 
@@ -17,7 +17,7 @@ This dataset contains MRI data from a sleep manipulation study conducted at the 
 
 ## Sleep protocol
 
-- **SR**: sleep restriction, -3 h TIB
+- **SR**: sleep restriction, 3h delay in sleep onset
 
 Participants were scanned under baseline and sleep manipulation conditions.
 
@@ -57,7 +57,8 @@ File contents are tracked with git-annex. After cloning, retrieve data with `dat
 
 ## Original publication
 
-Smevik et al.
+Smevik, H. et al. Poorer sleep health is associated with altered brain activation during cognitive control processing in healthy adults. Cereb Cortex 33, 7100–7119 (2023). [https://doi.org/10.1093/cercor/bhad024](https://doi.org/10.1093/cercor/bhad024)
+
 
 ## Contact
 
