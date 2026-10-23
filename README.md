@@ -17,9 +17,11 @@ This dataset contains MRI data from a sleep manipulation study conducted at the 
 
 ## Sleep protocol
 
+- **BL**: baseline (habitual) sleep
 - **SR**: sleep restriction, 3h delay in sleep onset
 
-Participants were scanned under baseline and sleep manipulation conditions.
+Baseline session: T2BL
+Follow-up session: T3SR or T4SR
 
 ## Imaging data
 
