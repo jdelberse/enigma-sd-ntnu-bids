@@ -1,1 +1,0 @@
-../../../../../../../../.git/annex/objects/X2/M4/MD5E-s10135--22d1198a3cc211b755a7fa30a2d54912.rst/MD5E-s10135--22d1198a3cc211b755a7fa30a2d54912.rst

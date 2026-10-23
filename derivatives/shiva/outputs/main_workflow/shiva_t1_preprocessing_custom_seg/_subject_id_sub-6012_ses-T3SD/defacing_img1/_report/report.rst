@@ -1,1 +1,0 @@
-../../../../../../../../.git/annex/objects/Fq/PX/MD5E-s10300--4b6e5f21f4ee812a733a03cc49a5f194.rst/MD5E-s10300--4b6e5f21f4ee812a733a03cc49a5f194.rst

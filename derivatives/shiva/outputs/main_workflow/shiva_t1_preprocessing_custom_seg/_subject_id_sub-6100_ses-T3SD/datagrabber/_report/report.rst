@@ -1,1 +1,0 @@
-../../../../../../../../.git/annex/objects/PM/Gk/MD5E-s9230--57999454631eaad4f538545e4d7cf710.rst/MD5E-s9230--57999454631eaad4f538545e4d7cf710.rst
